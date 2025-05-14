@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.menu-vertical {
+    width: 250px;
+    background-color: #1a237e;
+    color: white;
+    padding: 20px 0;
+    height: 100vh;
+    position: fixed;
+}
+
+.menu-vertical h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3949ab;
+}
+
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-vertical li {
+    padding: 0;
+}
+
+.menu-vertical a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu-vertical a:hover, .menu-vertical a.active {
+    background-color: #3949ab;
+}
+
+.contenido-principal {
+    margin-left: 250px;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+h1 {
+    color: #1a237e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.personaje {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.personaje:hover {
+    transform: translateY(-5px);
+}
+
+.personaje img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.personaje h2 {
+    color: #1a237e;
+    margin: 10px 0;
+}
+
+.personaje p {
+    color: #666;
+    line-height: 1.5;
+}
